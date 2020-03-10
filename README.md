@@ -10,7 +10,7 @@ python版本：3.6.8
 
 anaconda版本：Anaconda3-5.2.0
 
-tensorflow版本：2.1.0
+tensorflow版本：2.1.0（tips:up主使用的是tensorflow1的版本，所以在程序开始的时候，需要降低版本，具体语句：import tensorflow.compat.v1 as tf     tf.disable_v2_behavior()即可正常使用）
 
 IDE：pycharm-community-2019.2.3
 
