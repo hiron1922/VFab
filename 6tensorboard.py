@@ -59,3 +59,9 @@ for i in range(1000):
     if i % 50 == 0:
         result = sess.run(merged, feed_dict={xs: x_data, ys: y_data})
         writer.add_summary(result,i)
+
+# 如果是win10的操作系统执行完程序，按照下面的步骤打开生成的文件：
+# 1、打开命令提示符，使用activate （virtualEnvironmentName）打开tensorflow所在的虚拟环境
+# 2、使用cd命令定位到该程序所在的位置，这个时候会看到程序同一目录下有一个logs的文件夹，里面就是代码执行之后生成的文件
+# 3、执行tensorboard --logdir=logs
+# 4、复制执行之后出来的网址，比如http://localhost:6006/到浏览器
